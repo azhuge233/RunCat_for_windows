@@ -63,8 +63,8 @@ namespace RunCat
         private string manualTheme = UserSettings.Default.Theme;
         private string speed = UserSettings.Default.Speed;
         private Icon[] icons;
-        private Timer animateTimer = new Timer();
-        private Timer cpuTimer = new Timer();
+        private Timer animateTimer = new();
+        private Timer cpuTimer = new();
 
 
         public RunCatApplicationContext()
@@ -93,6 +93,10 @@ namespace RunCat
                 new ToolStripMenuItem("Horse", null, SetRunner)
                 {
                     Checked = runner.Equals("horse")
+                },
+                new ToolStripMenuItem("RuChan", null, SetRunner)
+                { 
+                    Checked = runner.Equals("ruchan")
                 }
             });
 
@@ -142,7 +146,7 @@ namespace RunCat
                 }
             });
 
-            ContextMenuStrip contextMenuStrip = new ContextMenuStrip(new Container());
+            ContextMenuStrip contextMenuStrip = new(new Container());
             contextMenuStrip.Items.AddRange(new ToolStripItem[]
             {
                 runnerMenu,
@@ -185,27 +189,22 @@ namespace RunCat
         private bool IsStartupEnabled()
         {
             string keyName = @"Software\Microsoft\Windows\CurrentVersion\Run";
-            using (RegistryKey rKey = Registry.CurrentUser.OpenSubKey(keyName))
-            {
-                return (rKey.GetValue(Application.ProductName) != null) ? true : false;
-            }
-        }
+			using RegistryKey rKey = Registry.CurrentUser.OpenSubKey(keyName);
+			return rKey.GetValue(Application.ProductName) != null;
+		}
 
         private string GetAppsUseTheme()
         {
             string keyName = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize";
-            using (RegistryKey rKey = Registry.CurrentUser.OpenSubKey(keyName))
-            {
-                object value;
-                if (rKey == null || (value = rKey.GetValue("SystemUsesLightTheme")) == null)
-                {
-                    Console.WriteLine("Oh No! Couldn't get theme light/dark");
-                    return "light";
-                }
-                int theme = (int)value;
-                return theme == 0 ? "dark" : "light";
-            }
-        }
+			using RegistryKey rKey = Registry.CurrentUser.OpenSubKey(keyName);
+			object value;
+			if (rKey == null || (value = rKey.GetValue("SystemUsesLightTheme")) == null) {
+				Console.WriteLine("Oh No! Couldn't get theme light/dark");
+				return "light";
+			}
+			int theme = (int)value;
+			return theme == 0 ? "dark" : "light";
+		}
 
         private void SetIcons()
         {
@@ -213,15 +212,14 @@ namespace RunCat
             ResourceManager rm = Resources.ResourceManager;
             // default runner is cat
             int capacity = 5;
-            if (runner.Equals("parrot"))
-            {
+            if (runner.Equals("parrot")) {
                 capacity = 10;
-            } 
-            else if (runner.Equals("horse")) 
-            {
+            } else if (runner.Equals("horse")) {
                 capacity = 14;
+            } else if (runner.Equals("ruchan")) {
+                capacity = 10;
             }
-            List<Icon> list = new List<Icon>(capacity);
+            List<Icon> list = new(capacity);
             for (int i = 0; i < capacity; i++)
             {
                 list.Add((Icon)rm.GetObject($"{prefix}_{runner}_{i}"));
@@ -311,19 +309,14 @@ namespace RunCat
         {
             startupMenu.Checked = !startupMenu.Checked;
             string keyName = @"Software\Microsoft\Windows\CurrentVersion\Run";
-            using (RegistryKey rKey = Registry.CurrentUser.OpenSubKey(keyName, true))
-            {
-                if (startupMenu.Checked)
-                {
-                    rKey.SetValue(Application.ProductName, Process.GetCurrentProcess().MainModule.FileName);
-                }
-                else
-                {
-                    rKey.DeleteValue(Application.ProductName, false);
-                }
-                rKey.Close();
-            }
-        }
+			using RegistryKey rKey = Registry.CurrentUser.OpenSubKey(keyName, true);
+			if (startupMenu.Checked) {
+				rKey.SetValue(Application.ProductName, Process.GetCurrentProcess().MainModule.FileName);
+			} else {
+				rKey.DeleteValue(Application.ProductName, false);
+			}
+			rKey.Close();
+		}
 
         private void Exit(object sender, EventArgs e)
         {

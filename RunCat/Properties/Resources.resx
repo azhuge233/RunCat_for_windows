@@ -292,4 +292,64 @@
   <data name="light_horse_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\horse\light_horse_13.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dark_ruchan_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\dark_ruchan_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_ruchan_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\dark_ruchan_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_ruchan_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\dark_ruchan_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_ruchan_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\dark_ruchan_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_ruchan_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\dark_ruchan_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_ruchan_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\dark_ruchan_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_ruchan_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\dark_ruchan_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_ruchan_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\dark_ruchan_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_ruchan_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\dark_ruchan_8.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dark_ruchan_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\dark_ruchan_9.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_ruchan_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\light_ruchan_0.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_ruchan_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\light_ruchan_1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_ruchan_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\light_ruchan_2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_ruchan_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\light_ruchan_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_ruchan_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\light_ruchan_4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_ruchan_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\light_ruchan_5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_ruchan_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\light_ruchan_6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_ruchan_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\light_ruchan_7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_ruchan_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\light_ruchan_8.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light_ruchan_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ruchan\light_ruchan_9.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
